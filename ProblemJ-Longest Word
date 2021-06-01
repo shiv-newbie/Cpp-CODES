@@ -1,4 +1,4 @@
-// This code is written by Shivam Haldiya github repository:
+// This code is written by Shivam Haldiya github repository: https://github.com/shiv-newbie/Cpp-CODES/blob/main/ProblemJ-Longest%20Word
 //Problem J Longest Word
 //Time Limit: 2 seconds
 //A word is composed of only letters of the alphabet (a-z, A-Z) and may contain one hyphen (-) or more. Given a text containing words, and other characters (punctuations, numbers, symbols, etc), you are to write a program to find the longest word.
