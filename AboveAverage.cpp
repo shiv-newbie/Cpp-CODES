@@ -25,8 +25,6 @@
 //55.556%
 
 #include <stdio.h>
-#include <vector>
-#include <algorithm>
 
 using namespace std;
 
@@ -35,27 +33,27 @@ int main()
     
     int cases;
     scanf("%d", &cases);
+    int here[1000];
     while(cases--)
     {
-        vector<int> here;
-        int t, j;
+        int t, j, i;
         scanf("%d", &t);
         float average = 0;
-        for(int i =0; i < t; i++)
+        for(i = 0; i < t; i++)
         {
             scanf("%d", &j);
             average += j;
-            here.push_back(j);
+            here[i] = j;
         }
         average = average/t;
-        sort(here.begin(),here.end(), greater<int>());
-        int i;
+        j = 0;
         for(i = 0; i < t; i++)
         {
-            if(here[i] <= average)
-                break;
+            if(here[i] > average)
+                j++;
         }
-        printf("%.3f%%\n", float(i)*100/t);
+        printf("%.3f%%\n", float(j)*100/t);
     }
     return 0;
 }
+
