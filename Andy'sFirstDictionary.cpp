@@ -47,6 +47,11 @@
  when
  */
 
+#include <iostream>
+#include <string>
+#include <set>
+#include <sstream>
+
 int main()
 {
     std::string words, var;
